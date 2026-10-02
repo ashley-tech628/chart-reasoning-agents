@@ -1,0 +1,19 @@
+name: Offline demo and evidence checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -r requirements-demo.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/verify_results.py
+      - run: python scripts/run_blackboard_demo.py --question "Which quarter has the largest gap between Product A and Product B?" --no-save

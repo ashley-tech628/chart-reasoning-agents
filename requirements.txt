@@ -1,0 +1,17 @@
+crewai>=0.86.0
+pydantic>=2.7.0
+python-dotenv>=1.0.0
+litellm>=1.40.0
+pillow>=10.0.0
+
+# Optional: only needed by scripts/make_sample_chart.py
+matplotlib>=3.8.0
+
+# Offline CV perception backend
+numpy>=1.26.0
+opencv-python>=4.8.0
+pytesseract>=0.3.10
+
+# Optional stronger OCR engines for local deployment experiments:
+# easyocr>=1.7.0
+# paddleocr>=2.7.0

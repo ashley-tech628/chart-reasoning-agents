@@ -1,0 +1,275 @@
+{
+  "mode": "deterministic structured fixture; no OCR/API",
+  "question": "Which quarter has the largest gap between Product A and Product B?",
+  "answer": {
+    "answer": "Q3",
+    "explanation": "Q3 has the largest gap (13).",
+    "intermediate_values": [
+      {
+        "name": "gap_Q1",
+        "value": 7.0
+      },
+      {
+        "name": "gap_Q2",
+        "value": 11.0
+      },
+      {
+        "name": "gap_Q3",
+        "value": 13.0
+      },
+      {
+        "name": "gap_Q4",
+        "value": 8.0
+      }
+    ]
+  },
+  "blackboard": {
+    "question": "Which quarter has the largest gap between Product A and Product B?",
+    "chart_dsl": {
+      "type": "bar_chart",
+      "title": "Quarterly Sales by Product",
+      "x_axis": "Quarter",
+      "y_axis": "Sales",
+      "groups": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "categories": [
+        "Product A",
+        "Product B"
+      ],
+      "data": [
+        {
+          "group": "Q1",
+          "category": "Product A",
+          "value": 42.0,
+          "visual_mark_index": 0
+        },
+        {
+          "group": "Q1",
+          "category": "Product B",
+          "value": 35.0,
+          "visual_mark_index": 1
+        },
+        {
+          "group": "Q2",
+          "category": "Product A",
+          "value": 58.0,
+          "visual_mark_index": 2
+        },
+        {
+          "group": "Q2",
+          "category": "Product B",
+          "value": 47.0,
+          "visual_mark_index": 3
+        },
+        {
+          "group": "Q3",
+          "category": "Product A",
+          "value": 71.0,
+          "visual_mark_index": 4
+        },
+        {
+          "group": "Q3",
+          "category": "Product B",
+          "value": 58.0,
+          "visual_mark_index": 5
+        },
+        {
+          "group": "Q4",
+          "category": "Product A",
+          "value": 88.0,
+          "visual_mark_index": 6
+        },
+        {
+          "group": "Q4",
+          "category": "Product B",
+          "value": 80.0,
+          "visual_mark_index": 7
+        }
+      ]
+    },
+    "messages": [
+      {
+        "round": 1,
+        "message_type": "claim",
+        "from_agent": "question_router",
+        "target": null,
+        "content": {
+          "task": "comparison",
+          "operation": "max_difference",
+          "required_solvers": [
+            "comparison_solver",
+            "arithmetic_solver"
+          ],
+          "optional_solvers": [
+            "format_critic",
+            "evidence_critic"
+          ],
+          "skip_solvers": [
+            "lookup_solver",
+            "counting_solver",
+            "label_matching_solver",
+            "boolean_solver"
+          ],
+          "cost_policy": "activate selected branches only; do not run all solvers by default"
+        },
+        "answer": null,
+        "support": null,
+        "confidence": 0.94,
+        "severity": null
+      },
+      {
+        "round": 1,
+        "message_type": "claim",
+        "from_agent": "answer_type_agent",
+        "target": null,
+        "content": {
+          "answer_type": "group",
+          "expected_format": "one axis-side group/bar label",
+          "valid_answers": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "reject_numeric_only_answer": true
+        },
+        "answer": null,
+        "support": null,
+        "confidence": 0.96,
+        "severity": null
+      },
+      {
+        "round": 2,
+        "message_type": "candidate",
+        "from_agent": "comparison_solver",
+        "target": null,
+        "content": null,
+        "answer": "Q3",
+        "support": {
+          "details": {
+            "gap_Q1": "7",
+            "gap_Q2": "11",
+            "gap_Q3": "13",
+            "gap_Q4": "8",
+            "max_gap": "13",
+            "max_gap_group": "Q3",
+            "rationale": "absolute gap between Product A and Product B by group"
+          },
+          "explanation": "Q3 has the largest gap (13)."
+        },
+        "confidence": 0.95,
+        "severity": null
+      },
+      {
+        "round": 2,
+        "message_type": "candidate",
+        "from_agent": "arithmetic_solver",
+        "target": null,
+        "content": null,
+        "answer": "13",
+        "support": {
+          "details": {
+            "gap_Q1": "7",
+            "gap_Q2": "11",
+            "gap_Q3": "13",
+            "gap_Q4": "8",
+            "max_gap": "13",
+            "max_gap_group": "Q3",
+            "rationale": "absolute gap between Product A and Product B by group"
+          },
+          "note": "13 is the largest gap value, but it may not be the final answer if the question asks for a group."
+        },
+        "confidence": 0.8,
+        "severity": null
+      },
+      {
+        "round": 3,
+        "message_type": "support",
+        "from_agent": "answer_format_critic",
+        "target": "comparison_solver",
+        "content": "Q3 matches the expected answer type (group) and is in the valid answer space.",
+        "answer": null,
+        "support": null,
+        "confidence": 0.95,
+        "severity": "support"
+      },
+      {
+        "round": 3,
+        "message_type": "objection",
+        "from_agent": "answer_format_critic",
+        "target": "arithmetic_solver",
+        "content": "13 is a correct numeric/intermediate value, but the question expects group: one axis-side group/bar label.",
+        "answer": null,
+        "support": null,
+        "confidence": 0.98,
+        "severity": "high"
+      },
+      {
+        "round": 3,
+        "message_type": "support",
+        "from_agent": "evidence_critic",
+        "target": "comparison_solver",
+        "content": "Candidate Q3 is supported by computed evidence: {'gap_Q1': '7', 'gap_Q2': '11', 'gap_Q3': '13', 'gap_Q4': '8', 'max_gap': '13', 'max_gap_group': 'Q3', 'rationale': 'absolute gap between Product A and Product B by group'}",
+        "answer": null,
+        "support": null,
+        "confidence": 0.85,
+        "severity": "support"
+      },
+      {
+        "round": 3,
+        "message_type": "support",
+        "from_agent": "evidence_critic",
+        "target": "arithmetic_solver",
+        "content": "Candidate 13 is supported by computed evidence: {'gap_Q1': '7', 'gap_Q2': '11', 'gap_Q3': '13', 'gap_Q4': '8', 'max_gap': '13', 'max_gap_group': 'Q3', 'rationale': 'absolute gap between Product A and Product B by group'}",
+        "answer": null,
+        "support": null,
+        "confidence": 0.85,
+        "severity": "support"
+      },
+      {
+        "round": 4,
+        "message_type": "final_decision",
+        "from_agent": "judge_agent",
+        "target": null,
+        "content": {
+          "final_answer": "Q3",
+          "selected_from": [
+            "comparison_solver"
+          ],
+          "rejected_candidates": [
+            {
+              "answer": "13",
+              "from_agent": "arithmetic_solver",
+              "score": -0.5,
+              "reason": "lower score or answer-type mismatch"
+            }
+          ],
+          "explanation": "Q3 has the largest gap (13).",
+          "answer_type_used": {
+            "answer_type": "group",
+            "expected_format": "one axis-side group/bar label",
+            "valid_answers": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4"
+            ],
+            "reject_numeric_only_answer": true
+          },
+          "decision_rule": "candidate confidence + support votes - objections + answer-type gate"
+        },
+        "answer": "Q3",
+        "support": null,
+        "confidence": 1.0,
+        "severity": null
+      }
+    ],
+    "final_answer": "Q3",
+    "final_explanation": "Q3 has the largest gap (13).",
+    "final_confidence": 1.0
+  }
+}

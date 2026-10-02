@@ -1,0 +1,66 @@
+{
+  "type": "bar_chart",
+  "title": "Quarterly Sales by Product",
+  "x_axis": "Quarter",
+  "y_axis": "Sales",
+  "groups": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "categories": [
+    "Product A",
+    "Product B"
+  ],
+  "data": [
+    {
+      "group": "Q1",
+      "category": "Product A",
+      "value": 42.0,
+      "visual_mark_index": 0
+    },
+    {
+      "group": "Q1",
+      "category": "Product B",
+      "value": 35.0,
+      "visual_mark_index": 1
+    },
+    {
+      "group": "Q2",
+      "category": "Product A",
+      "value": 58.0,
+      "visual_mark_index": 2
+    },
+    {
+      "group": "Q2",
+      "category": "Product B",
+      "value": 47.0,
+      "visual_mark_index": 3
+    },
+    {
+      "group": "Q3",
+      "category": "Product A",
+      "value": 71.0,
+      "visual_mark_index": 4
+    },
+    {
+      "group": "Q3",
+      "category": "Product B",
+      "value": 58.0,
+      "visual_mark_index": 5
+    },
+    {
+      "group": "Q4",
+      "category": "Product A",
+      "value": 88.0,
+      "visual_mark_index": 6
+    },
+    {
+      "group": "Q4",
+      "category": "Product B",
+      "value": 80.0,
+      "visual_mark_index": 7
+    }
+  ]
+}

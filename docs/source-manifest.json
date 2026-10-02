@@ -1,0 +1,235 @@
+{
+  "upstream": "https://github.com/chen-si-cs/CSE252D_Project",
+  "local_head": "",
+  "note": "Copied from local working files; HEAD does not prove uncommitted files belong to this revision. Hashes describe source files before packaging changes.",
+  "files": [
+    {
+      "path": "chart_agents/config.py",
+      "sha256": "ef79c8ab711fdc7cf9f72b5fb7daabbe58f038dea2117459e4180edf41c96af1"
+    },
+    {
+      "path": "chart_agents/crew.py",
+      "sha256": "8c5df29db37cf19e74cf91e9d5a7e8b0f2ad4a475a5fa9c26a8d2e51965fc6d1"
+    },
+    {
+      "path": "chart_agents/schemas.py",
+      "sha256": "cb51eec724c39cc6f0c719ac88a49c4ea546d9210e3099ea3164102a779d220e"
+    },
+    {
+      "path": "chart_agents/utils.py",
+      "sha256": "5b5fd678e6bd06a09242666b51d7dd354a564448c976579c1c92bb11706a886f"
+    },
+    {
+      "path": "chart_agents/agents/answer_type.py",
+      "sha256": "14054eada9953a938ef96b8a83ed999ea328f1d181a7b35ca868b590059c0705"
+    },
+    {
+      "path": "chart_agents/agents/evidence.py",
+      "sha256": "394c611c885e130fee83cde1d2462e4626836bfa1065ae7a5ac0b636cf79be18"
+    },
+    {
+      "path": "chart_agents/agents/judge.py",
+      "sha256": "0943623ee126320a68931edcdf82e782547259bab83a5c8ee7075c77fb4d44d2"
+    },
+    {
+      "path": "chart_agents/agents/normalizer.py",
+      "sha256": "d9934cfce6a8338ca1b7564d17a05d1a02da739cdf3603d96728ea067241f24b"
+    },
+    {
+      "path": "chart_agents/agents/perception.py",
+      "sha256": "2691c47573af8b5ef0d4f5197aea9245089e05b9b7463f5c8097dc27d8882b42"
+    },
+    {
+      "path": "chart_agents/agents/question_parser.py",
+      "sha256": "f958de9292c2246b16928305b9971bdff601e4a7e4d17a3bfdba1529d064763b"
+    },
+    {
+      "path": "chart_agents/agents/reasoning_critic.py",
+      "sha256": "ae714c62d88bcb855187c3a4d689c4fe28dd59f2cfc2604169504383f5073343"
+    },
+    {
+      "path": "chart_agents/agents/representation.py",
+      "sha256": "1a7cc35f00bdac3b669f2aeadd99f6a0a7344f3af2fe02538081233a20ea9f1c"
+    },
+    {
+      "path": "chart_agents/agents/router.py",
+      "sha256": "059ad3c789606a3b7de18d1ebb9485697c59f44d430ead7d083120811befaf68"
+    },
+    {
+      "path": "chart_agents/agents/__init__.py",
+      "sha256": "d90978512e64c01a2529899d417640645e01eb73b4225538651bab1f2e5918bb"
+    },
+    {
+      "path": "chart_agents/blackboard/messages.py",
+      "sha256": "3975eeb1f6420d9a7499d7c87dc8ccf3df731e8193df00be2048743a61fbe9fb"
+    },
+    {
+      "path": "chart_agents/blackboard/state.py",
+      "sha256": "f3f6b40764dc4f1a66dfe43f8ddf8fec38bbc77b06fcdf01497eee5504a782c2"
+    },
+    {
+      "path": "chart_agents/blackboard/__init__.py",
+      "sha256": "e1f05dea12042d37e0f961b9b27f9cf11e20e97818a5cc91a3e4f6d1e0209ac3"
+    },
+    {
+      "path": "chart_agents/critics/evidence_critic.py",
+      "sha256": "f4db2adb003545621edb59e3b9e2f3d9d7d5b2ea2ba15b830126025894a70609"
+    },
+    {
+      "path": "chart_agents/critics/format_critic.py",
+      "sha256": "12f8531fd3b05f6b0db7acdb6fa8e21998ad8f5d4af9b785eceb23cdcfad52c4"
+    },
+    {
+      "path": "chart_agents/critics/__init__.py",
+      "sha256": "27411c0d3e49ecc79308423d850b00668f65c30115b3c5981498f0dd8e3f07ec"
+    },
+    {
+      "path": "chart_agents/solvers/arithmetic_solver.py",
+      "sha256": "cc0ae1c0164ad53cb36e26c320ca428fcea2e5558e0fa12e8075b243f3eda10c"
+    },
+    {
+      "path": "chart_agents/solvers/boolean_solver.py",
+      "sha256": "fef735fecc696c5186e6ce367da4f9fb7006c41aa80edaa5f874e3e1e316e910"
+    },
+    {
+      "path": "chart_agents/solvers/comparison_solver.py",
+      "sha256": "ee99b6c77f0aa03b307647b18c92b78add60a69ce464560a7dc2d89f09f22b11"
+    },
+    {
+      "path": "chart_agents/solvers/counting_solver.py",
+      "sha256": "6a425b9b43b6848fea25bf3c21c889cdd26182908a4de38ab39843d3b98e9fac"
+    },
+    {
+      "path": "chart_agents/solvers/deterministic_overrides.py",
+      "sha256": "050a72de0cd00503c0de05052301de7c33ce135597aefb87972379233c7790d2"
+    },
+    {
+      "path": "chart_agents/solvers/label_matching_solver.py",
+      "sha256": "519f9d3101a17bc1450751096ae0621c794161e157df16b85b339383e3d713ab"
+    },
+    {
+      "path": "chart_agents/solvers/lookup_solver.py",
+      "sha256": "305a373d49c337d65e3879e2424798a4e61f29a16b43cfe9d2639dda773d5e22"
+    },
+    {
+      "path": "chart_agents/solvers/registry.py",
+      "sha256": "940969ba28b5da2aeb3b3c3626c02c20493d038ebe9336f1fe7b6373bd050c9b"
+    },
+    {
+      "path": "chart_agents/solvers/utils.py",
+      "sha256": "289a0a23a693bd7fd5cbabc5b69fb933dce9eb4203b231545cc8eaed62c8a2b3"
+    },
+    {
+      "path": "chart_agents/solvers/__init__.py",
+      "sha256": "35cce9e94f144eea5caf30ad9e03795dc958ed3459d22dd6f8eeef3b8f561cf5"
+    },
+    {
+      "path": "chart_agents/tools/offline_vision.py",
+      "sha256": "1a3ea38e253012bc058939033d32b0ea415af65d8a7bb54354c25cb4e8423189"
+    },
+    {
+      "path": "chart_agents/tools/vision.py",
+      "sha256": "cd7c43ec118acee92c2e2d869127e1fc76360f0a143fe8bc64d93cdb91403070"
+    },
+    {
+      "path": "chart_agents/workflows/blackboard_workflow.py",
+      "sha256": "47ed81de0e1e939b86e6de9b54146362b1d07bacde7dd1a0c67303fe707b60ad"
+    },
+    {
+      "path": "chart_agents/workflows/__init__.py",
+      "sha256": "50070b546e04e0a28173a30b90cf8c6035ce88cc30d0cf095b6191868c7202c1"
+    },
+    {
+      "path": "scripts/aggregate_dvqa.py",
+      "sha256": "eb0ef53c35f52bf7ff8fd56391658bc931e9cbb4f567f4e1162bd0eca9937f00"
+    },
+    {
+      "path": "scripts/aggregate_easy_only.py",
+      "sha256": "ec1921d4ec389920c496249f0c56f46baead8451df0ce82bc50dee8a36643c95"
+    },
+    {
+      "path": "scripts/check_ocr_setup.py",
+      "sha256": "85c701fb5c46bdf69f92ae228797f5cdfd9bb9cb37c476c507d22a4135ec4912"
+    },
+    {
+      "path": "scripts/make_sample_chart.py",
+      "sha256": "0f0a7281b0139aabb37d4ef1db5ca9acdcbfca19852c1ae8eb02ec7b53c6d1db"
+    },
+    {
+      "path": "scripts/quick_easy_compare.py",
+      "sha256": "56b187be73e8b1b68d9795694bfd1f4a1e9e38ebcb4e28a1a164cb016fefed72"
+    },
+    {
+      "path": "scripts/run_blackboard_demo.py",
+      "sha256": "be536ab4703c08b82a92b423afc02a6aee659f925a122d2431b6c013bb9e06bf"
+    },
+    {
+      "path": "scripts/run_dvqa_agents.py",
+      "sha256": "66fa0e5c27bd0a9d602ebda4aa397ae390a59568f84377fdb0e5ec407fed7015"
+    },
+    {
+      "path": "scripts/run_dvqa_agents_blackboard.py",
+      "sha256": "6bf3b075db501918d862148cdffecaef904523d2355f4189483523b805e757bb"
+    },
+    {
+      "path": "scripts/run_dvqa_agents_hybrid.py",
+      "sha256": "1eac8766ca490699bec325e07fa3b510709a0b6b3a3c174bd3e3b5335fd81597"
+    },
+    {
+      "path": "scripts/run_dvqa_baseline.py",
+      "sha256": "0dd08fc257a91452ca947a2ef1297872ae551235720574567ea37ed60642de38"
+    },
+    {
+      "path": "scripts/run_single.py",
+      "sha256": "d3fc4f0acf6cb3cef7c54e3196f9bac7f7505cb02bccf9fd05d1ec7450bce313"
+    },
+    {
+      "path": "scripts/sample_dvqa.py",
+      "sha256": "1f7b26d026d78c69823b3d37e2aa9a1766e23e78a657a87c75e0aae766c40e02"
+    },
+    {
+      "path": "scripts/smoke_offline_perception.py",
+      "sha256": "1cdf6ac1837911b81fb8bdb12dc3edc89b606dd3a986ce63f9e8d94a4fa5a8c4"
+    },
+    {
+      "path": "dvqa_eval/evaluation/metrics.py",
+      "sha256": "a60d3a3dc240a9cd0fe6cb1a14fabc055025c8a0554b1ff55b9e9ae339f62368"
+    },
+    {
+      "path": "dvqa_eval/evaluation/__init__.py",
+      "sha256": "262ecc73087def33b806f21c9482a2741d311df10a4f774b2251a360a8711fe0"
+    },
+    {
+      "path": "dvqa_eval/chart_agents/datasets/dvqa.py",
+      "sha256": "a8947f4b52275a8d83b1861ee02858fbeefecf36f92d1da2d149870435e6d1c6"
+    },
+    {
+      "path": "dvqa_eval/chart_agents/datasets/dvqa_archives.py",
+      "sha256": "e3d1eefe2308aa67d24022b0bfd8617570ff62cda8d0c2a5dde3fe44804d8cb0"
+    },
+    {
+      "path": "dvqa_eval/chart_agents/datasets/__init__.py",
+      "sha256": "5503e4c8bd41d264f47322a795bf2d7514ea421ff3897b9763115744a17e2720"
+    },
+    {
+      "path": "eval_runs/test30-baseline-val_easy/predictions.jsonl",
+      "sha256": "3c5b883533d0cc955b9bf6627bb983dbc6ae81e4cb4d40dfd9562d7cd37017db",
+      "transformation": "Retained IDs, gold/prediction, type, critic flag, latency and error only."
+    },
+    {
+      "path": "eval_runs/test30-agents-val_easy/predictions.jsonl",
+      "sha256": "7e58b2fb7d135cfc12150a6dbefdd57d45f17710060d0056060361f2c2d4e51c",
+      "transformation": "Retained IDs, gold/prediction, type, critic flag, latency and error only."
+    },
+    {
+      "path": "eval_runs/test30-baseline-val_hard/predictions.jsonl",
+      "sha256": "2963f934493fe479c1aa6f2319884d1adf6d7d2df6aada58101f30d8f9cb765d",
+      "transformation": "Retained IDs, gold/prediction, type, critic flag, latency and error only."
+    },
+    {
+      "path": "eval_runs/test30-agents-val_hard/predictions.jsonl",
+      "sha256": "32208caaf1aa8ee40ceb952b697dada72e08482e928a0b8d4303b0f8a407ec92",
+      "transformation": "Retained IDs, gold/prediction, type, critic flag, latency and error only."
+    }
+  ]
+}

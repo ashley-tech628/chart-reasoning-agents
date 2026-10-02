@@ -1,0 +1,80 @@
+[
+  {
+    "split": "val_easy",
+    "n_paired": 30,
+    "baseline_strict_em": 0.5,
+    "agents_strict_em": 0.6666666666666666,
+    "baseline_relaxed": 0.5333333333333333,
+    "agents_relaxed": 0.7,
+    "per_question_type": {
+      "reasoning": {
+        "n": 30,
+        "baseline_strict": 0.5,
+        "agents_strict": 0.6666666666666666,
+        "baseline_relaxed": 0.5333333333333333,
+        "agents_relaxed": 0.7
+      }
+    },
+    "mcnemar_strict": {
+      "b_only_a_right": 7,
+      "c_only_b_right": 2,
+      "both_right": 13,
+      "neither_right": 8,
+      "p_value": 0.1796875
+    },
+    "mcnemar_relaxed": {
+      "b_only_a_right": 8,
+      "c_only_b_right": 3,
+      "both_right": 13,
+      "neither_right": 6,
+      "p_value": 0.2265625
+    },
+    "critic": {
+      "n_with_verdict": 30,
+      "p_consistent": 0.4666666666666667,
+      "consistent_and_correct": 9,
+      "consistent_and_wrong": 5,
+      "inconsistent_and_correct": 12,
+      "inconsistent_and_wrong": 4
+    }
+  },
+  {
+    "split": "val_hard",
+    "n_paired": 30,
+    "baseline_strict_em": 0.36666666666666664,
+    "agents_strict_em": 0.7,
+    "baseline_relaxed": 0.36666666666666664,
+    "agents_relaxed": 0.7333333333333333,
+    "per_question_type": {
+      "reasoning": {
+        "n": 30,
+        "baseline_strict": 0.36666666666666664,
+        "agents_strict": 0.7,
+        "baseline_relaxed": 0.36666666666666664,
+        "agents_relaxed": 0.7333333333333333
+      }
+    },
+    "mcnemar_strict": {
+      "b_only_a_right": 14,
+      "c_only_b_right": 4,
+      "both_right": 7,
+      "neither_right": 5,
+      "p_value": 0.0308837890625
+    },
+    "mcnemar_relaxed": {
+      "b_only_a_right": 15,
+      "c_only_b_right": 4,
+      "both_right": 7,
+      "neither_right": 4,
+      "p_value": 0.0192108154296875
+    },
+    "critic": {
+      "n_with_verdict": 30,
+      "p_consistent": 0.3333333333333333,
+      "consistent_and_correct": 8,
+      "consistent_and_wrong": 2,
+      "inconsistent_and_correct": 14,
+      "inconsistent_and_wrong": 6
+    }
+  }
+]

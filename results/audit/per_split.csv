@@ -1,0 +1,5 @@
+split,question_type,n,metric,baseline,agents,delta
+val_easy,reasoning,30,strict_em,0.5000,0.6667,+0.1667
+val_easy,reasoning,30,relaxed,0.5333,0.7000,+0.1667
+val_hard,reasoning,30,strict_em,0.3667,0.7000,+0.3333
+val_hard,reasoning,30,relaxed,0.3667,0.7333,+0.3667

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="400" viewBox="0 0 860 400" role="img" aria-labelledby="title desc">
+<title id="title">Quarterly sales by product</title><desc id="desc">Synthetic fixture. Product A: 42, 58, 71, 88. Product B: 35, 47, 58, 80. Largest gap Q3: 13.</desc>
+<rect width="860" height="400" rx="16" fill="#f4f7fc"/>
+<g font-family="Arial,sans-serif" fill="#17243b"><text x="38" y="38" font-size="23" font-weight="bold">Quarterly Sales by Product</text><text x="38" y="62" font-size="13">Synthetic fixture · structured reasoning demo</text>
+<rect x="110" y="217.6" width="36" height="92.4" rx="4" fill="#335de8"/><text x="128" y="208.6" text-anchor="middle" font-size="14">42</text>
+<rect x="158" y="233.0" width="36" height="77.0" rx="4" fill="#15958a"/><text x="176" y="224.0" text-anchor="middle" font-size="14">35</text>
+<text x="150" y="331" text-anchor="middle" font-size="15">Q1</text>
+<rect x="285" y="182.39999999999998" width="36" height="127.60000000000001" rx="4" fill="#335de8"/><text x="303" y="173.39999999999998" text-anchor="middle" font-size="14">58</text>
+<rect x="333" y="206.6" width="36" height="103.4" rx="4" fill="#15958a"/><text x="351" y="197.6" text-anchor="middle" font-size="14">47</text>
+<text x="325" y="331" text-anchor="middle" font-size="15">Q2</text>
+<rect x="430" y="82" width="145" height="252" rx="10" fill="#dff0ee"/>
+<rect x="460" y="153.79999999999998" width="36" height="156.20000000000002" rx="4" fill="#335de8"/><text x="478" y="144.79999999999998" text-anchor="middle" font-size="14">71</text>
+<rect x="508" y="182.39999999999998" width="36" height="127.60000000000001" rx="4" fill="#15958a"/><text x="526" y="173.39999999999998" text-anchor="middle" font-size="14">58</text>
+<text x="500" y="331" text-anchor="middle" font-size="15">Q3</text>
+<rect x="635" y="116.39999999999998" width="36" height="193.60000000000002" rx="4" fill="#335de8"/><text x="653" y="107.39999999999998" text-anchor="middle" font-size="14">88</text>
+<rect x="683" y="134.0" width="36" height="176.0" rx="4" fill="#15958a"/><text x="701" y="125.0" text-anchor="middle" font-size="14">80</text>
+<text x="675" y="331" text-anchor="middle" font-size="15">Q4</text>
+<rect x="45" y="355" width="13" height="13" fill="#335de8"/><text x="65" y="367" font-size="13">Product A</text><rect x="158" y="355" width="13" height="13" fill="#15958a"/><text x="178" y="367" font-size="13">Product B</text><text x="500" y="367" font-size="15" font-weight="bold">Largest gap: Q3 · 71 − 58 = 13</text></g></svg>
